@@ -1,0 +1,86 @@
+/* Contenitore prodotto (Card) con sfumatura e angoli smussati */
+.product-detail-container {
+  background: linear-gradient(to bottom, #98FBCB, rgba(152, 251, 203, 0.8) 70%); /* Sfumatura verde chiaro */
+  border-radius: 15px; /* Angoli smussati */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombra morbida */
+  transition: all 0.3s ease-in-out; /* Transizione per hover */
+}
+
+/* Hover della card (prodotto) */
+.product-detail-container:hover {
+  background: linear-gradient(to bottom, #98FBCB, rgba(152, 251, 203, 0.6) 80%);
+  transform: translateY(-5px); /* Elevazione della card */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Ombra più intensa */
+}
+
+/* Immagine del prodotto smussata */
+.product-detail-container img {
+  border-radius: 15px 15px 0 0;
+}
+
+/* Titolo del prodotto */
+.card-title {
+  color: #670434; /* Colore del titolo */
+  font-weight: bold;
+}
+
+/* Testo dentro la card */
+.card-text {
+  color: #333; /* Colore del testo */
+}
+
+/* Bottone "Aggiungi al carrello" */
+.card .btn-primary {
+  background-color: #4CAF50; /* Colore verde */
+  border-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transizione al hover */
+}
+
+/* Bottone "Aggiungi al carrello" - Hover (passaggio del mouse) */
+.card .btn-primary:hover {
+  background-color: #9b59b6; /* Colore viola */
+  border-color: #9b59b6;
+}
+
+/* Bottone disabilitato "Non Disponibile" */
+.card .btn-secondary {
+  background-color: #6c757d; /* Colore grigio */
+  border-color: #6c757d;
+  color: white;
+  pointer-events: none; /* Disabilita l'interazione */
+}
+
+/* Bottone disabilitato al passaggio del mouse */
+.card .btn-secondary:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+/* Input per la quantità con bordi personalizzati */
+.card input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s ease; /* Transizione per focus */
+}
+
+/* Focus sul campo quantità */
+.card input[type="number"]:focus {
+  border-color: #4CAF50; /* Colore verde al focus */
+  outline: none;
+}
+
+/* Stile generale per il titolo */
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #670434;
+}
+
+/* Stile per i messaggi di errore/successo */
+.alert {
+  font-size: 1rem;
+}

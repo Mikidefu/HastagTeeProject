@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+}
+
+.ng-touched.ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+}
+
+/* Impostare altezza 100% per html e body */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;  /* Consente lo scroll verticale */
+}
+
+/* Sfondo animato con gradiente */
+body {
+  background: linear-gradient(-45deg, #d4e2fc, #c1ffd4, #fff7a3, #f9c0c0);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  overflow-x: hidden;  /* Disabilita lo scroll orizzontale */
+}
+
+/* Animazione del gradiente */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.content {
+  min-height: 100%;  /* Assicura che il contenuto prenda tutta l'altezza disponibile */
+  padding-bottom: 20px;  /* Aggiungi un po' di spazio extra in basso per evitare problemi di scroll */
+}
+
+.hero-bar {
+  display: flex;
+  width: 100%;
+  background-color: #f8f9fa; /* colore di base neutro */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hero-logo {
+  flex: 1; /* occupa meno spazio */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.hero-logo img {
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.hero-bar {
+  margin: 40px auto;              /* margini orizzontali */
+  max-width: 100%;                 /* non occupa tutta la larghezza */
+  border-radius: 18px;            /* bordi arrotondati */
+  overflow: hidden;               /* per gestire bordi tondi */
+  display: flex;
+  background-color: #670434;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: relative;            /* resta sotto la navbar */
+  z-index: 1;                     /* assicura che non sovrasti la navbar */
+}
+
+.hero-logo {
+  flex: 1;
+  background-color: #45a049;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-logo img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: fill;
+}
+
+
+.hero-slogan {
+  flex: 3;
+  background-color: #670434;
+  color: #45a049;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-size: 40px;
+  font-weight: bold; /* oppure 700 */
+  font-family: 'Fascinate', sans-serif;
+  text-align: center;
+  line-height: 1.4;
+
+}
+
+body {
+  padding-top: 70px; /* o quanto è alta la navbar */
+}
+
+

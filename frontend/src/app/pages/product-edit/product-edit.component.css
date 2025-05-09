@@ -1,0 +1,85 @@
+/* Container personalizzato per il form */
+.container-custom {
+  max-width: 600px; /* Larghezza massima */
+  margin: 25px auto; /* Centra il form nella pagina */
+  padding: 25px;
+  border-radius: 15px; /* Angoli smussati */
+  background: linear-gradient(to bottom, #f9f9f9, #f1f1f1); /* Sfumatura di colore per il form */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+}
+
+/* Stile per il form e gli input */
+.form-control-lg {
+  border-radius: 8px; /* Angoli smussati per gli input */
+  font-size: 16px;
+  transition: all 0.3s ease; /* Transizione su focus */
+}
+
+/* Focus sugli input */
+.form-control-lg:focus {
+  border-color: #4CAF50; /* Colore verde al focus */
+  outline: none;
+}
+
+/* Stile per i select */
+.custom-select {
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.3s ease; /* Transizione al focus */
+}
+
+/* Focus sugli select */
+.custom-select:focus {
+  border-color: #4CAF50; /* Colore verde al focus */
+  outline: none;
+}
+
+/* Stile per il bottone di invio */
+.btn-primary {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border-radius: 8px; /* Angoli smussati per il bottone */
+}
+
+/* Bottone invio hover */
+.btn-primary:hover {
+  background-color: #9b59b6;
+  border-color: #9b59b6;
+}
+
+/* Messaggi di errore per gli input invalidi */
+.ng-invalid.ng-touched {
+  border-color: #e74c3c; /* Colore rosso per gli errori */
+}
+
+/* Messaggio di errore */
+.form-group div {
+  color: #e74c3c; /* Colore rosso per il messaggio di errore */
+  font-size: 14px;
+}
+
+/* Bordi degli input e select personalizzati */
+.form-control, .custom-select {
+  border: 1px solid #ddd;
+}
+
+/* Spaziatura tra gli input */
+.form-group {
+  margin-bottom: 20px;
+}
+
+
+/* Stile generale per il titolo */
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #670434;
+}
+
+/* Stile per i messaggi di errore/successo */
+.alert {
+  font-size: 1rem;
+}

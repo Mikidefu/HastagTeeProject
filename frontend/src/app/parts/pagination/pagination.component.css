@@ -1,0 +1,19 @@
+.pagination .page-link {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+
+  border: none;
+}
+
+.pagination .page-link:hover {
+  background-color: #670434;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #670434; /* viola chiaro */
+  color: white;
+
+  font-weight: bold;
+  border: none;
+}

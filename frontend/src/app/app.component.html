@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+<app-navigation></app-navigation>
+    <router-outlet></router-outlet>
+
+    <div class="audio-controls">
+        <button (click)="toggleMute()">
+          {{ isMuted ? '🔇' : '🔊' }}
+        </button>
+      <input
+        type="range"
+        class="volume-slider"
+        min="0"
+        max="1"
+        step="0.01"
+        [value]="volume"
+        (input)="changeVolume($event)"
+        [style.background]="getSliderBackground(volume)"
+      >
+
+    </div>
+
+    <div class="container">
+        <br>
+        <br>
+        <hr>
+        <div class="text-center">
+            <a style="color: inherit" href="https://github.com/Mikidefu"><i class="fab fa-github fa-3x"></i></a>
+        </div>
+
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center">
+            © 2024 Copyright:
+            <a href="https://github.com/Mikidefu"> Mikidefu </a>
+        </div>
+        <!--/.Copyright-->
+    </div>
+</div>

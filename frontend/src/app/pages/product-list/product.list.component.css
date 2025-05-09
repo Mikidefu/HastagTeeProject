@@ -1,0 +1,105 @@
+/* Contenitore della sezione prodotti */
+.products-container {
+  padding: 20px;
+  background: linear-gradient(to bottom, #98FBCB, rgba(152, 251, 203, 0.8) 70%);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titolo principale */
+h1.display-4 {
+  color: #670434;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Stile per il link "Aggiungi" */
+a[routerLink="/seller/product/new"] {
+  text-decoration: none;
+  color: #670434;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+}
+
+a[routerLink="/seller/product/new"] i {
+  margin-right: 5px;
+}
+
+a[routerLink="/seller/product/new"]:hover {
+  color: #000;
+}
+
+/* Tabella dei prodotti */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: center;
+  border: none;
+  vertical-align: middle;
+}
+
+.table th {
+  background-color: #ffffff;
+  color: #670434;
+  font-weight: bold;
+}
+
+.table td {
+  color: #333;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.table td a {
+  color: #670434;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.table td a:hover {
+  color: #4CAF50 ;
+}
+
+/* Immagine prodotto */
+.table img {
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Pulsanti "Modifica" e "Rimuovi" */
+.table td a {
+  display: block;
+  margin: 2px 0;
+}
+
+/* Pulsanti e interazione */
+button {
+  background-color: #670434;
+  color: #98FBCB;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #670434;
+  border: 1px solid #670434;
+}
+
+/* Paginazione */
+app-pagination {
+  margin-top: 20px;
+  display: block;
+}

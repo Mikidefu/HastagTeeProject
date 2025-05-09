@@ -1,0 +1,66 @@
+/* signup-container styling */
+.signup-container {
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom registration buttons */
+/* Pulsante personalizzato per login e registrazione */
+.signup-container .btn-custom {
+  background-color: #4CAF50; /* Colore verde */
+  border-color: #4CAF50;
+  color: white;
+}
+
+.signup-container .btn-custom:hover {
+  background-color: #670434; /* Colore viola */
+  border-color: #670434;
+}
+
+
+a {
+  font-size: 0.9rem;
+  color: #670434;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #28a745;
+}
+
+
+.btn-custom:hover {
+  background-color: #45a049;
+  border-color: #45a049;
+}
+
+/* Alerts */
+.alert {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Footer text */
+.footer-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Stile generale per il titolo */
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #670434;
+}
+
+/* Stile per i messaggi di errore/successo */
+.alert {
+  font-size: 1rem;
+}
+
+button:disabled {
+  background-color: #d0d0d0; /* Colore disabilitato */
+  cursor: not-allowed; /* Cambia il cursore quando il bottone è disabilitato */
+}

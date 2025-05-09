@@ -1,0 +1,74 @@
+.orders-container {
+  padding: 20px;
+  background: linear-gradient(to bottom, #98FBCB, rgba(152, 251, 203, 0.8) 70%);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Tabella */
+.table th {
+  background-color: #ffffff;
+  color: #670434;
+
+
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Effetto ombra */
+}
+
+/* Angoli arrotondati - header */
+.table thead tr:first-child th:first-child {
+  border-top-left-radius: 15px;
+}
+.table thead tr:first-child th:last-child {
+  border-top-right-radius: 15px;
+}
+
+/* Angoli arrotondati - footer (ultima riga) */
+.table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 15px;
+}
+.table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Link azione */
+.table a {
+  display: block;
+  color: #670434;
+  text-decoration: none;
+  margin-bottom: 5px;
+  border-radius: 15px;
+}
+
+.table a:hover {
+  color: #9A4D9C;
+}
+
+/* Paginazione personalizzata */
+.pagination .page-link {
+  color: #670434;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #ffffff;
+  border-color: #670434;
+  color: #670434;
+  border-bottom: 3px solid #9A4D9C;
+}

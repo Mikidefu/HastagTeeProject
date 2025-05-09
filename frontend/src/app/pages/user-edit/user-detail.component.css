@@ -1,0 +1,49 @@
+form {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.form-control:focus {
+  border-color: #6c63ff; /* Colore viola per il focus */
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+button:disabled {
+  background-color: #d0d0d0;
+}
+
+input:disabled {
+  background-color: #f5f5f5;
+}
+
+label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+button {
+  background-color: #45a049; /* Colore verde */
+  color: white;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9b59b6; /* Colore viola al passaggio del mouse */
+}
+
+button:disabled {
+  background-color: #d0d0d0; /* Colore disabilitato */
+}

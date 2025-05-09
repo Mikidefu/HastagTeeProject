@@ -1,0 +1,60 @@
+<h1 align="center" class="display-4 mb-5">Registrazione</h1>
+<div class="signup-container" style="width: 40%; margin: 25px auto;">
+
+  <div class="alert alert-danger" *ngIf="isInvalid">
+    Si è verificato un errore durante la registrazione.
+  </div>
+
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input [(ngModel)]="user.email" type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Inserisci email" required autofocus #email="ngModel">
+      <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+        <div *ngIf="email.errors.required">E' richiesta un'Email.</div>
+        <div *ngIf="email.errors.email">Email non valida.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input [(ngModel)]="user.name" type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Il tuo nome" required #name="ngModel">
+      <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+        <div *ngIf="name.errors.required">E' richiesto un nome.</div>
+        <div *ngIf="name.errors.minlength">Il nome deve essere lungo almeno 3 caratteri.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input [(ngModel)]="user.password" type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Password" minlength="3" required #password="ngModel">
+      <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger">
+        <div *ngIf="password.errors.required">E' richiesta una password.</div>
+        <div *ngIf="password.errors.minlength">La password deve essere lunga almeno 3 caratteri.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Numero di telefono</label>
+      <input [(ngModel)]="user.phone" type="text" class="form-control form-control-lg" id="phone" name="phone" placeholder="Telefono" required #phone="ngModel">
+      <div *ngIf="phone.invalid && (phone.dirty || phone.touched)" class="alert alert-danger">
+        <div *ngIf="phone.errors.required">E' richiesto un numero di telefono.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Indirizzo</label>
+      <input [(ngModel)]="user.address" type="text" class="form-control form-control-lg" id="address" name="address" placeholder="Indirizzo" required #address="ngModel">
+      <div *ngIf="address.invalid && (address.dirty || address.touched)" class="alert alert-danger">
+        <div *ngIf="address.errors.required">E' richiesto un indirizzo.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-lg btn-custom btn-block" [disabled]="!form.form.valid">Registrati</button>
+    </div>
+  </form>
+
+  <div class="footer-text">
+    <p>Hai già un account? <a routerLink="/login">Accedi</a></p>
+  </div>
+</div>

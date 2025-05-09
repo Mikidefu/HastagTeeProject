@@ -1,0 +1,87 @@
+/* Contenitore login */
+.login-container {
+  padding: 20px;
+  background-color: #f7f9fc;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile generale per il titolo */
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #670434;
+}
+
+/* Stile per i messaggi di errore/successo */
+.alert {
+  font-size: 1rem;
+}
+
+/* Stile per i campi di input */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Focus sugli input */
+.form-control:focus {
+  border-color: #670434;
+  box-shadow: 0 0 5px rgba(103, 4, 52, 0.5);
+}
+
+/* Stile per i pulsanti */
+button.btn-custom {
+  background-color: #28a745; /* Verde di default */
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #55012f;
+}
+
+/* Stile per il link "Registrati" */
+a {
+  font-size: 0.9rem;
+  color: #670434;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #28a745;
+}
+
+/* Layout per la parte del checkbox e link */
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-flex .inline {
+  font-size: 0.9rem;
+}
+
+#sampleLoginTable td {
+  text-align: center;
+  padding: 5px;
+}
+
+#sampleLoginTable td a {
+  color: #670434;
+  text-decoration: none;
+}
+
+#sampleLoginTable td a:hover {
+  color: #28a745;
+}
+
+/* Stile per la divisione degli utenti di prova */
+hr {
+  margin: 20px 0;
+  border: 1px solid #e0e0e0;
+}

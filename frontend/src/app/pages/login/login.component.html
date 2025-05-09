@@ -1,0 +1,56 @@
+<h1 align="center" class="display-4 mb-5">Log-in</h1>
+<div class="login-container" style="width: 40%; margin: 25px auto;">
+
+  <div class="alert alert-danger" *ngIf="isInvalid">
+    Username e password non validi.
+  </div>
+  <div class="alert alert-info" *ngIf="isLogout">
+    Hai effettuato la disconnessione.
+  </div>
+
+  <form #form='ngForm' (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="email">Indirizzo Email</label>
+      <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Enter email"
+             required autofocus [(ngModel)]="model.username" #email="ngModel" autocomplete="email" >
+      <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+        E' richiesta l'Email
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control form-control-lg" id="password" name="password"  autocomplete="password"
+             placeholder="Password" required [(ngModel)]="model.password" #password='ngModel'>
+      <div [hidden]="password.valid || password.pristine" class="alert alert-danger">
+        E' richiesta la password
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <input type="checkbox" id="remember_me" name="remember-me" [(ngModel)]="model.remembered">
+          <label for="remember_me" class="inline">Ricordami</label>
+        </div>
+        <a class="float-right" routerLink="/register">Registrati</a>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button [disabled]="!form.form.valid" type="submit" class="btn btn-lg btn-custom btn-block">Effettua il Log-in</button>
+    </div>
+  </form>
+
+  <hr>
+
+  <strong>Utenti Di prova</strong>
+  <table style="width: 100%;" id="sampleLoginTable">
+    <tr>
+      <td><a (click)="fillLoginFields('cliente1@email.com','123')" href="javascript:void(0)">Cliente1</a></td>
+      <td><a (click)="fillLoginFields('operatore1@email.com','123')" href="javascript:void(0)">Operatore1</a></td>
+      <td><a (click)="fillLoginFields('manager1@email.com','123')" href="javascript:void(0)">Manager1</a></td>
+    </tr>
+  </table>
+
+</div>

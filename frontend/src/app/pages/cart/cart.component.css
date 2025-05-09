@@ -1,0 +1,135 @@
+/* Stile generale per il carrello */
+.cart-container {
+  padding: 20px;
+  background: linear-gradient(to bottom, #98FBCB, rgba(152, 251, 203, 0.8) 70%);
+  border-radius: 15px; /* Angoli smussati */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Stile della tabella nel carrello */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff; /* Colore di sfondo bianco per la tabella */
+  border-radius: 12px;
+  overflow: hidden; /* Angoli smussati per la tabella */
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Linea separatrice tra le righe */
+}
+
+.table th {
+  background-color: #ffffff; /* Colore di sfondo per le intestazioni della tabella */
+  color: #670434; /* Colore del testo delle intestazioni */
+}
+
+.table td {
+  color: #333; /* Colore del testo per le celle della tabella */
+}
+
+.table td a {
+  color: #670434; /* Colore dei link dentro la tabella */
+  text-decoration: none;
+}
+
+.table td a:hover {
+  color: #000; /* Colore dei link al passaggio del mouse */
+}
+
+/* Aggiungi uno smusso agli angoli della foto */
+table img {
+  border-radius: 8px;
+}
+
+/* Formattazione della quantità e dei bottoni */
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #670434; /* Colore del bordo al focus */
+}
+
+/* Stile dei bottoni + e - */
+i {
+  cursor: pointer;
+  font-size: 20px;
+  color: #670434;
+  transition: color 0.3s ease-in-out;
+}
+
+i:hover {
+  color: #000;
+}
+
+/* Totale e checkout */
+h5 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: #670434;
+  color: #98FBCB;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+/* Messaggio carrello vuoto */
+.empty {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+/* Rimuovere bordo e padding da alcune celle nella tabella per un effetto più pulito */
+.table th, .table td {
+  border: none;
+}
+
+.table td {
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Bordo superiore */
+}
+
+/* Stile per il carrello vuoto */
+.empty h4 {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+/* Layout del carrello: mantenere la disposizione verticale */
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  height: auto; /* Rende la sezione del carrello dinamica in altezza */
+}
+
+/* Impostazioni per il tasto checkout in basso a destra */
+.checkout-container {
+  margin-top: auto; /* Spinge il tasto di checkout in basso */
+  text-align: right; /* Allinea a destra */
+}
+
+button.btn-warning {
+  margin-right: 20px; /* Distanza dal bordo destro */
+  padding: 10px 20px;
+  border-radius: 8px; /* Angoli smussati per il tasto */
+}

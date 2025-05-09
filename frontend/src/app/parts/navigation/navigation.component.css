@@ -1,0 +1,43 @@
+.category-font {
+  font-family: 'Fascinate', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.brand-font {
+  font-family: 'Fascinate', cursive;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.selected-size {
+  border: 2px solid #670434;
+  border-radius: 12px;
+  padding: 4px 10px;
+  background-color: #670434;
+  color: #98FBCB !important;
+  font-weight: bold;
+}
+
+/* Navbar con sfumatura verticale verso il basso */
+.navbar {
+  width: 100%; /* La navbar si estende su tutta la larghezza */
+  background: linear-gradient(to bottom, #98FBCB, rgba(152, 251, 203, 0) 80%); /* Sfumatura dal verde chiaro a trasparente */
+}
+
+/* Modifica il colore del testo della navbar */
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #670434; /* Colore del testo in rosso scuro */
+}
+
+.navbar .nav-link:hover {
+  color: #000000; /* Colore del testo nero al passaggio del mouse */
+}
+
+/* Assicurati che il contenuto della navbar non si sovrapponga */
+.navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+}

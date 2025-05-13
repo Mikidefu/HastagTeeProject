@@ -1,23 +1,23 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# Vedi http://help.github.com/ignore-files/ per più informazioni.
 
-# compiled output
+# output compilati
 /dist
 /tmp
 /out-tsc
 
-# dependencies
+# dipendenze
 /node*
 /node_modules
 
-# IDEs and editors
+# IDE ed editors
 /web.iml
 /node_modules
 
-# profiling files
+# file di profiling
 chrome-profiler-events.json
 speed-measure-plugin.json
 
-# IDEs and editors
+# IDE editor
 /.idea
 .project
 .classpath
@@ -43,6 +43,6 @@ yarn-error.log
 testem.log
 /typings
 
-# System Files
+# File di Sistema
 .DS_Store
 Thumbs.db

@@ -6,39 +6,34 @@ Il client frontend effettua chiamate API al server backend quando è in esecuzio
 
 ## Screenshot
 
-![Screenshot]("C:\Users\acer\Desktop\SpringBoot-Angular7-Online-Shopping-Store-master\frontend\src\assets\ScreenCart.png")
+![Screenshot](https://raw.githubusercontent.com/Mikidefu/HastagTeeProject/refs/heads/main/frontend/src/assets/ScreenCart.png?token=GHSAT0AAAAAADDK2MNBLU3XDQPYM44LRIJG2A54KOQ)
 
 ## Funzionalità
-- API REST
-- Docker
-- Docker Compose
 - Autenticazione tramite JWT
-- Carrello per i visitatori basato su cookie
-- Carrello persistente per gli utenti registrati
+- API REST
 - Gestione del carrello e degli ordini
-- Checkout
 - Catalogo
 - Gestione ordini
+- Carrello per i visitatori basato su cookie
+- Carrello persistente per gli utenti registrati
 - Paginazione
+- Checkout
 
 ## Stack tecnologico
 **Backend**
 - Java 11
-- Spring Boot 2.2
-- Spring Security
-- Autenticazione JWT
+- Spring Boot
+- PostgreSQL
 - Spring Data JPA
 - Hibernate
-- PostgreSQL
+- Spring Security
 - Maven
+- Autenticazione JWT
 
 **Frontend**
-- Angular 7
+- Angular 
 - Angular CLI
 - Bootstrap
-
-## Schema del database
-![Schema DB](https://raw.githubusercontent.com/zhulinn/blog/hexo/source/uploads/post_pics/spring-angular/db.png)
 
 ## Come eseguire il progetto
 
@@ -49,8 +44,8 @@ Avviare il server backend prima del client frontend.
 1. Installare [PostgreSQL](https://www.postgresql.org/download/)
 2. Configurare il datasource nel file `application.yml`
 3. Spostarsi nella cartella `backend`
-4. Eseguire `mvn install`
-5. Eseguire `mvn spring-boot:run`
+4. Lanciare `mvn install`
+5. Lanciare `mvn spring-boot:run`
 6. Spring Boot importerà automaticamente dati di esempio nel database eseguendo il file `import.sql`
 7. Il server backend sarà attivo su [localhost:8080]()
 
@@ -58,17 +53,8 @@ Avviare il server backend prima del client frontend.
 
 1. Installare [Node.js e npm](https://www.npmjs.com/get-npm)
 2. Spostarsi nella cartella `frontend`
-3. Eseguire `npm install`
-4. Eseguire `ng serve`
+3. Lanciare `npm install`
+4. Lanciare `ng serve`
 5. Il client frontend sarà attivo su [localhost:4200]()
 
 > Nota: l'URL dell'API backend è configurato nel file `src/environments/environment.ts` del progetto frontend. Di default è `localhost:8080/api`.
-
-## Esecuzione con Docker
-
-È possibile creare le immagini ed eseguire i container usando Docker.
-
-### 1. Costruire il progetto backend
-```bash
-cd backend
-mvn package

@@ -50,7 +50,6 @@ export class ProductListComponent implements OnInit, OnDestroy {
 
     getProds(page: number = 1, size: number = 5) {
         this.productService.getAllInPage(+page, +size)
-          // tslint:disable-next-line:no-shadowed-variable
             .subscribe(page => {
                 this.page = page;
             });

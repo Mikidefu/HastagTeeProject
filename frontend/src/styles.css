@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/* Puoi aggiungere stili globali a questo file, e anche importare altri file di stile */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 .ng-valid[required], .ng-valid.required  {

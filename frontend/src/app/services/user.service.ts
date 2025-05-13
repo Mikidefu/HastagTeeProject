@@ -61,7 +61,7 @@ export class UserService {
                     return user;
                 }
             }),
-            catchError(this.handleError('Login Failed', null))
+            catchError(this.handleError('Login Fallito', null))
         );
     }
 
@@ -85,18 +85,19 @@ export class UserService {
         return this.http.get<User>(url);
     }
 
-    /**
-     * Handle Http operation that failed.
-     * Let the app continue.
-     * @param operation - name of the operation that failed
-     * @param result - optional value to return as the observable result
-     */
-    private handleError<T>(operation = 'operation', result?: T) {
+  /**
+   * Gestisce un'operazione HTTP che non è riuscita.
+   * Consente all'app di continuare.
+   * @param operation - nome dell'operazione che non è riuscita
+   * @param result - valore opzionale da restituire come risultato dell'observable
+   */
+
+  private handleError<T>(operation = 'operation', result?: T) {
         return (error: any): Observable<T> => {
 
             console.log(error); // log to console instead
 
-            // Let the app keep running by returning an empty result.
+            // "Consente all'app di continuare restituendo un risultato vuoto."
             return of(result as T);
         };
     }

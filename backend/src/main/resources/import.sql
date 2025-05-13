@@ -1,5 +1,3 @@
--- the order of values is related to the name of field.
--- Updating is necessary, if the name is changed
 
 
 
@@ -12,10 +10,10 @@ INSERT INTO "public"."order_main" VALUES (2147483643, 'Via Popilia, 23', 'client
 INSERT INTO "public"."order_main" VALUES (2147483648, 'Via Popilia, 23', 'cliente1@email.com', 'cliente1', '123456789', '2025-03-15 13:01:06.943', 4.99, 1, '2024-03-15 13:02:56.498');
 
 -- ----------------------------
--- Table structure for product_category
+-- Strutture per taglie
 
 -- ----------------------------
--- Records of product_category
+-- Record di taglia
 -- ----------------------------
 INSERT INTO "public"."product_category" VALUES (2147483641, 'S', 0, '2024-01-01 23:25:27', '2024-01-01 23:29:27');
 INSERT INTO "public"."product_category" VALUES (2147483642, 'L', 2, '2024-02-01 21:35:17', '2024-02-01 21:35:17');
@@ -24,7 +22,7 @@ INSERT INTO "public"."product_category" VALUES (2147483645, 'M', 1, '2025-03-10 
 
 
 -- ----------------------------
--- Records of product_in_order
+-- Record di prodottiOrdine
 -- ----------------------------
 
 
@@ -54,7 +52,7 @@ INSERT INTO "public"."product_in_order" VALUES (2147483649, 3,1,'Levis T-shirt U
 
 
 -- ----------------------------
--- Records of product_info
+-- Recorddi info prodotti
 -- ----------------------------
 
 -- Maglietta Monkey D. Luffy
@@ -83,7 +81,7 @@ INSERT INTO "public"."product_info" VALUES ('B0008', 3, '2025-05-06 10:00:00', '
 
 
 -- ----------------------------
--- Records of users
+-- Record di utenti
 -- ----------------------------
 INSERT INTO "public"."users" VALUES (2147483641, 't', 'Via Popilia, 23', 'cliente1@email.com', 'cliente1', '$2a$10$PrI5Gk9L.tSZiW9FXhTS8O8Mz9E97k2FZbFvGFFaSsiTUIl.TCrFu', '123456789', 'ROLE_CUSTOMER');
 INSERT INTO "public"."users" VALUES (2147483642, 't', 'Via Pomponio Leto, 1', 'manager1@email.com', 'manager1', '$2a$10$PrI5Gk9L.tSZiW9FXhTS8O8Mz9E97k2FZbFvGFFaSsiTUIl.TCrFu', '987654321', 'ROLE_MANAGER');
@@ -91,7 +89,7 @@ INSERT INTO "public"."users" VALUES (2147483643, 't', 'Corso Mazzini, 25', 'oper
 INSERT INTO "public"."users" VALUES (2147483645, 't', 'Via Alimena,14', 'cliente2@email.com', 'cliente2', '$2a$10$0oho5eUbDqKrLH026A2YXuCGnpq07xJpuG/Qu.PYb1VCvi2VMXWNi', '2343456', 'ROLE_CUSTOMER');
 
 -- ----------------------------
--- Records of cart
+-- Record di carrello
 -- ----------------------------
 INSERT INTO "public"."cart" VALUES (2147483641);
 INSERT INTO "public"."cart" VALUES (2147483642);

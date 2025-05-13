@@ -45,7 +45,6 @@ public class OrderMain implements Serializable {
     @NotEmpty
     private String buyerAddress;
 
-    // Total Amount
     @NotNull
     private BigDecimal orderAmount;
 

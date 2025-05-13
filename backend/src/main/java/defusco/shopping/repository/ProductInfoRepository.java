@@ -7,10 +7,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ProductInfoRepository extends JpaRepository<ProductInfo, String> {
     ProductInfo findByProductId(String id);
-    // onsale product
+    // Prodotti in vendita
     Page<ProductInfo> findAllByProductStatusOrderByProductIdAsc(Integer productStatus, Pageable pageable);
 
-    // product in one category
+    // Prodotti di una taglia
     Page<ProductInfo> findAllByCategoryTypeOrderByProductIdAsc(Integer categoryType, Pageable pageable);
 
     Page<ProductInfo> findAllByOrderByProductId(Pageable pageable);

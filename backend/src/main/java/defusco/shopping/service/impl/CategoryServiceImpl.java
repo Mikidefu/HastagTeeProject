@@ -22,7 +22,6 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public List<ProductCategory> findAll() {
         List<ProductCategory> res = productCategoryRepository.findAllByOrderByCategoryType();
-      //  res.sort(Comparator.comparing(ProductCategory::getCategoryType));
         return res;
     }
 
@@ -36,7 +35,6 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public List<ProductCategory> findByCategoryTypeIn(List<Integer> categoryTypeList) {
         List<ProductCategory> res = productCategoryRepository.findByCategoryTypeInOrderByCategoryTypeAsc(categoryTypeList);
-       //res.sort(Comparator.comparing(ProductCategory::getCategoryType));
         return res;
     }
 

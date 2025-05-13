@@ -51,7 +51,6 @@ export class CardComponent implements OnInit, OnDestroy {
   getProds(page: number = 1, size: number = 3) {
     if (this.route.snapshot.url.length === 1) {
       this.productService.getAllInPage(+page, +size)
-        // tslint:disable-next-line:no-shadowed-variable
         .subscribe(page => {
           this.page = page;
           this.title = 'Acquista le tue magliette preferite!';

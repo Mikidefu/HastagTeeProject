@@ -59,7 +59,7 @@ export const prod: ProductInfo = {
   productDescription: 'Taglia M, modello oversize comodo e casual.',
   productIcon: 'assets/maglietta-oversize.jpg',
   productStatus: 0,
-  categoryType: 1,
+  categoryType: 1, // M
   createTime: '2025-05-01T12:00:00.000+0000',
   updateTime: '2025-05-01T12:00:00.000+0000'
 };

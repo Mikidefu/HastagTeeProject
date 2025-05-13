@@ -20,7 +20,6 @@ public class ProductInOrder {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
-//    @JoinColumn(name = "cart_id")
     @JsonIgnore
     private Cart cart;
 
@@ -75,16 +74,16 @@ public class ProductInOrder {
 
     @Override
     public String toString() {
-        return "ProductInOrder{" +
+        return "ProdottoOrdine{" +
                 "id=" + id +
-                ", productId='" + productId + '\'' +
-                ", productName='" + productName + '\'' +
-                ", productDescription='" + productDescription + '\'' +
-                ", productIcon='" + productIcon + '\'' +
-                ", categoryType=" + categoryType +
-                ", productPrice=" + productPrice +
-                ", productStock=" + productStock +
-                ", count=" + count +
+                ", IDProdotto='" + productId + '\'' +
+                ", Nome Prodotto='" + productName + '\'' +
+                ", Descrizione Prodotto='" + productDescription + '\'' +
+                ", Icona Prodotto='" + productIcon + '\'' +
+                ", Taglia=" + categoryType +
+                ", Prezzo=" + productPrice +
+                ", Stock=" + productStock +
+                ", Quantità scelta=" + count +
                 '}';
     }
 

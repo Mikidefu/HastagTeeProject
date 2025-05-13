@@ -85,7 +85,7 @@ public class OrderServiceImpl implements OrderService {
         orderMain.setOrderStatus(OrderStatusEnum.CANCELED.getCode());
         orderRepository.save(orderMain);
 
-        // Restore Stock
+        // Riconfigura lo Stock
         Iterable<ProductInOrder> products = orderMain.getProducts();
         for(ProductInOrder productInOrder : products) {
             ProductInfo productInfo = productInfoRepository.findByProductId(productInOrder.getProductId());

@@ -39,12 +39,12 @@ public class UserServiceImpl implements UserService {
     @Override
     @Transactional
     public User save(User user) {
-        //register
+        //Registrazione
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         try {
             User savedUser = userRepository.save(user);
 
-            // initial Cart
+            // Carrello Iniziale
             Cart savedCart = cartRepository.save(new Cart(savedUser));
             savedUser.setCart(savedCart);
             return userRepository.save(savedUser);

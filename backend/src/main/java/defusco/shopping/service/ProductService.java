@@ -9,17 +9,17 @@ public interface ProductService {
 
     ProductInfo findOne(String productId);
 
-    // All selling products
+    // Tutte le magliette in vendita
     Page<ProductInfo> findUpAll(Pageable pageable);
-    // All products
+    // Tutte le magliette
     Page<ProductInfo> findAll(Pageable pageable);
-    // All products in a category
+    // Tutte le magliette di una taglia
     Page<ProductInfo> findAllInCategory(Integer categoryType, Pageable pageable);
 
-    // increase stock
+    // aumenta lo stock
     void increaseStock(String productId, int amount);
 
-    //decrease stock
+    //decrementa lo stock
     void decreaseStock(String productId, int amount);
 
     ProductInfo offSale(String productId);

@@ -40,8 +40,7 @@ public class User implements Serializable {
     private String role = "ROLE_CUSTOMER";
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JsonIgnore  // fix bi-directionrisolve il problema della bi-direzionalità
-    // del toString() problema ricorsivo
+    @JsonIgnore
     private Cart cart;
 
 

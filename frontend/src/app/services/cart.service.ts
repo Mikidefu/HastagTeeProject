@@ -76,17 +76,34 @@ export class CartService {
 
   addItem(productInOrder): Observable<boolean> {
     if (!this.currentUser) {
+      // Se non c'è un utente loggato, aggiorna il carrello nel cookie
       if (this.cookieService.check('cart')) {
         this.localMap = JSON.parse(this.cookieService.get('cart'));
       }
+
+      // Se il prodotto non è presente nel carrello, aggiungilo
       if (!this.localMap[productInOrder.productId]) {
         this.localMap[productInOrder.productId] = productInOrder;
       } else {
         this.localMap[productInOrder.productId].count += productInOrder.count;
       }
-      this.cookieService.set('cart', JSON.stringify(this.localMap));
+
+      // Aggiorna il cookie con il carrello locale
+      this.cookieService.set(
+        'cart',
+        JSON.stringify(this.localMap),
+        2,                 // durata in giorni
+        '/',               // path
+        undefined,         // dominio
+        false,             // secure
+        'Lax'              // sameSite
+      );
+      console.log('Carrello locale aggiornato:', JSON.stringify(this.localMap));  // Aggiungi questo log
+
+
       return of(true);
     } else {
+      // Per gli utenti loggati, invia la richiesta al server
       const url = `${this.cartUrl}/add`;
       return this.http.post<boolean>(url, {
         'quantity': productInOrder.count,

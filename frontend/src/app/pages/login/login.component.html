@@ -11,7 +11,7 @@
   <form #form='ngForm' (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="email">Indirizzo Email</label>
-      <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Enter email"
+      <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Email"
              required autofocus [(ngModel)]="model.username" #email="ngModel" autocomplete="email" >
       <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
         E' richiesta l'Email

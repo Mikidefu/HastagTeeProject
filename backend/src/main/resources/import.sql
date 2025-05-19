@@ -79,7 +79,6 @@ INSERT INTO "public"."product_info" VALUES ('B0007', 2, '2025-05-06 10:00:00', '
 -- Maglietta Uomo Levi's Verde
 INSERT INTO "public"."product_info" VALUES ('B0008', 3, '2025-05-06 10:00:00', 'Levis T-shirt Uomo Verde', 'https://m.media-amazon.com/images/I/51mqhPzcXwL._AC_SX569_.jpg', 'Maglietta Uomo Verde', 18.18, 0, 140, '2025-05-06 10:06:00');
 
-
 -- ----------------------------
 -- Record di utenti
 -- ----------------------------
